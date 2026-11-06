@@ -1,0 +1,13 @@
+{
+  "name": "ny-operations",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Public Mayor's Management Report tools for budgets, goals, and outcomes.",
+  "workspaces": [
+    "apps/web"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w ny-operations-web",
+    "build": "npm run build -w ny-operations-web"
+  }
+}

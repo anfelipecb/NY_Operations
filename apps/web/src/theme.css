@@ -1,0 +1,64 @@
+:root {
+  --bg: #eef0f4;
+  --bg-deep: #e3e6ee;
+  --ink: #0b0c18;
+  --hi: 11, 12, 24;
+  --line: rgba(11, 12, 24, 0.12);
+  --glass: rgba(255, 255, 255, 0.62);
+  --glass-edge: rgba(11, 12, 24, 0.1);
+  --seam: rgba(238, 240, 244, 0.85);
+  --glow-1: rgba(79, 123, 255, 0.18);
+  --glow-2: rgba(214, 247, 94, 0.28);
+  --glow-3: rgba(63, 184, 201, 0.16);
+  --strip-glow: rgba(29, 26, 143, 0.3);
+  --shadow: rgba(20, 24, 60, 0.22);
+  --ring: #0b0c18;
+  --panel-a: rgba(255, 255, 255, 0.72);
+  --panel-b: rgba(255, 255, 255, 0.45);
+  --sheet-bg: rgba(255, 255, 255, 0.88);
+  --series-b: #3a5be0;
+  --serif: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --sans: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0d0e1a;
+  --bg-deep: #08080f;
+  --ink: #ffffff;
+  --hi: 255, 255, 255;
+  --line: rgba(255, 255, 255, 0.14);
+  --glass: rgba(26, 26, 44, 0.6);
+  --glass-edge: rgba(255, 255, 255, 0.14);
+  --seam: rgba(13, 14, 26, 0.6);
+  --glow-1: rgba(122, 63, 224, 0.18);
+  --glow-2: rgba(224, 70, 156, 0.08);
+  --glow-3: rgba(255, 133, 71, 0.1);
+  --strip-glow: rgba(224, 70, 156, 0.4);
+  --shadow: rgba(0, 0, 0, 0.8);
+  --ring: #ffffff;
+  --panel-a: rgba(255, 255, 255, 0.07);
+  --panel-b: rgba(255, 255, 255, 0.035);
+  --sheet-bg: rgba(22, 21, 38, 0.88);
+  --series-b: #ff8547;
+  color-scheme: dark;
+}
+
+.seg {
+  --tone: var(--tone-l, #ffffff);
+  --seg-ink: var(--ink-l, #0b0c18);
+}
+
+:root[data-theme="dark"] .seg {
+  --tone: var(--tone-d, #ffffff);
+  --seg-ink: var(--ink-d, #14101f);
+}
+
+.ramp-bar {
+  background: var(--ramp-l);
+}
+
+:root[data-theme="dark"] .ramp-bar {
+  background: var(--ramp-d);
+}
